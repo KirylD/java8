@@ -8,13 +8,20 @@ import java.util.List;
 
 /**
  * @author Kiryl Drabysheuski
+ * @since 1.0
  */
 public class App {
+
     private static final Logger LOG = LogManager.getLogger(App.class);
 
     public static void main(String[] args) {
-        LOG.info("The main method was started.");
+        LOG.info("The main method starts.");
         List<String> list = Arrays.asList("Kiryl", "Dasha", "Oleg", "Tanya");
-        LOG.info("The main method was started.");
+        LOG.debug("list contains: {}.", list);
+
+
+        LOG.debug("after sorting list contains: {}.", list);
+        LOG.info("The main method finished.");
     }
+
 }
